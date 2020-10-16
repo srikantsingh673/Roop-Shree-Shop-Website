@@ -5,8 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+
+    <!--My CSS File-->
+    <link rel="stylesheet" href="search.css">
+   
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
     <title>Roop Shree Cosmetic & Gift Store</title>
   </head>
@@ -18,8 +24,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <input class="form-control mr-sm-2" type="text" onfocus="showSearchDiv()" id="searchBox" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="searchToys()">Search</button>
           </form>
         </div>
       </nav>
@@ -29,7 +35,7 @@
         <div class="row">
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-              <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="image/toy01.jpg">
+              <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="image/toy01.jpg" >
               <div class="card-body">
                 <p class="card-text">This is a toy helicopter with (forward,asceding,descend,convolution) (Left,Right Rotation) 4 channel remote contoler.</p>
                 <div class="d-flex justify-content-between align-items-center">
@@ -49,6 +55,36 @@
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">Rs:- 460/-</button>
+                    
+                  </div>
+                  <small class="text-muted"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="image/tank.jpg">
+              <div class="card-body">
+                <p class="card-text">Deformation Combat Tank with lightining and sound.</p><br><br>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Rs:- 560/-</button>
+                    
+                  </div>
+                  <small class="text-muted"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="image/dianosour01.jpg">
+              <div class="card-body">
+                <p class="card-text">Machenical Spray Dragon with Amazing lightining and sound .</p><br><br>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Rs:- 580/-</button>
                     
                   </div>
                   <small class="text-muted"></small>
@@ -210,6 +246,21 @@
           </div>
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="image/dough_ factory.jpg">
+              <div class="card-body">
+                <p class="card-text">This is NON_TOXIC 5 different colour CLAY set. with Modeling Compound And Totally safe for childrens.</p><br>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Rs:- 349/-</button>
+                    
+                  </div>
+                  <small class="text-muted"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
                 <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="image/cube01.jpg">
               <div class="card-body">
                 <p class="card-text">The Rubik's cube is a 3-D combination puzzle ( 3x3 ) Which is very fun to solve. You can find here different types of cube.</p>
@@ -227,10 +278,85 @@
             <div class="card mb-4 shadow-sm">
                 <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="image/alphabet_puzzle.jpg">
               <div class="card-body">
-                <p class="card-text">This is a Best Quality Alphabet PUZZLE TILES for Childrens.</p><br><br>
+                <p class="card-text">This is a Best Quality Alphabet PUZZLE TILES for Childrens.</p><br>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">Rs:- 460/-</button>
+                    
+                  </div>
+                  <small class="text-muted"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="image/dianosour02.jpg">
+              <div class="card-body">
+                <p class="card-text">Dianosour with walking ability included music and lightning. Made with Fiber Plastic, Runs on ( 3 AA size ) Battery.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Rs:- 580/-</button>
+                    
+                  </div>
+                  <small class="text-muted"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="image/drum_keyboard.jpg">
+              <div class="card-body">
+                <p class="card-text">Electronic Drum with Organ Keyboard. with lots of Features.</p><br>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Rs:- 499/-</button>
+                    
+                  </div>
+                  <small class="text-muted"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="image/hello_kitty.jpg">
+              <div class="card-body">
+                <p class="card-text">Dancing Kitty with universal wheel lightning and music.</p><br>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Rs:- 520/-</button>
+                    
+                  </div>
+                  <small class="text-muted"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="image/princess01.jpg">
+              <div class="card-body">
+                <p class="card-text">Beautiful Dancing Princess with Music and Lightning. Which Runs on ( 3 AA size ) Battery.</p><br>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Rs:- 440/-</button>
+                    
+                  </div>
+                  <small class="text-muted"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="image/elephant.jpg">
+              <div class="card-body">
+                <p class="card-text">Beautiful Walking Elephant With Amazing sound and lighting.</p><br>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Rs:- 280/-</button>
                     
                   </div>
                   <small class="text-muted"></small>
@@ -673,9 +799,79 @@
               </div>
             </div>
           </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="image/bowling.jpg">
+              <div class="card-body">
+                <p class="card-text">Real Bowling Play Set, ( Indoor and Outdoor )</p><br>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Rs:- 239/-</button>
+                    
+                  </div>
+                  <small class="text-muted"></small>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+    </div>
 
+    <!-- output div-->
+
+    <div class="container-fluid">
+      <div class="row position-fixed pt-2 bg-danger" id="searchDiv" >
+            <div class="col-md-12">
+              <div class="container-fluid">
+                <div class="row ">
+                  <div class="col-md-2 col-sm-2 text-right d-block d-md-none">
+                           <span class="f21 p-cursor float-right" onclick="closeSearchDiv()"><b>&times;</b></span>
+                    </div>
+                  <div class="col-md-10 col-sm-10 ">             				
+                      <div class="form-group">
+                                <input type="text" name="searchKey" id="searchKey" onkeyup="searchAlgorithm()" class="form-control form-control-lg bg-transparent border-dark border-top-0 border-left-0 border-right-0 offset-lg-1" autofocus="">
+                            </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 text-right d-none d-md-block">
+                           <span class="f21 p-cursor" onclick="closeSearchDiv()"><b>&times;</b></span>
+                    </div>	
+                </div>
+              </div>
+            </div>
+            <!--end of search div-->
+            <div class="col-md-12">
+              <div class="row justify-content-around" id="displayOutput">
+                
+              </div>
+            </div>
+      </div>
+    </div>
+
+
+
+<!-- Contact Modal -->
+<div id="contactModal" class="modal fade" role="dialog">
+ <div class="modal-dialog">
+
+   <!-- Modal content-->
+   <div class="modal-content">
+     <div class="modal-header">
+       <button type="button" class="close" data-dismiss="modal">&times;</button>
+     </div>
+     <div class="modal-body">
+       <p>Call Us : +91 9113760169</p>
+       <p class="ml-5 pl-2">: +91 8002744003</p>
+     </div>
+   </div>
+
+ </div>
+</div>
+<!--End of contact modal-->
+
+
+    <!--Script for searching div-->
+    <script src="search.js" type="text/javascript"></script>
+    <!--/End of searching script-->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
